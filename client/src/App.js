@@ -20,7 +20,7 @@ import {isLoggedIn } from './utils/AuthService';
 import Subscribe from './components/Subscribe';
 import Resources from './pages/Resources';
 import Dashboard from './pages/Dashboard';
-
+import Report from './pages/Report';
 {/* <Route exact path="/home" render={() => ( */ }
 //   isLoggedIn() ? (
 //     <Redirect to="/front" />
@@ -38,6 +38,7 @@ class App extends Component {
           <Watermark />
           <Route exact path="/" component={Home} />
           <Route exact path="/Resources" component={Resources} />
+          <Route exact path="/Report" component={Report} />
           <Route exact path="/Profile" render={() => (
             (isLoggedIn()) ? (
               <Dashboard/>

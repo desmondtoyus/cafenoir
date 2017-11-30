@@ -60,7 +60,8 @@ const Headline = (props) => {
                                                                                                                 <span className="card-title">Overview</span>
                                                                                                                 <div className="card-content">
                                                                                                                     <h2 style={{fontWeight:'200', fontSize: '28px', fontFamily: 'Mandali', lineHeight: '35px'}}>More than a nonprofit serving the homeless,
-                    <span style={{color:'#FF6B6B'}}>hommore</span> is a movement.</h2>
+                    <span style={{color:'#FF6B6B'}}> hommore</span> is a movement.</h2>
+                    <br/>
                                                                                                                     <div style={{width:'35px', height: '3px', backgroundColor: '#FF6B6B', margin: '0px'}}></div>
                                                                                                                 </div>
               </div>
