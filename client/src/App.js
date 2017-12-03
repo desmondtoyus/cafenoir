@@ -21,6 +21,8 @@ import Subscribe from './components/Subscribe';
 import Resources from './pages/Resources';
 import Dashboard from './pages/Dashboard';
 import Report from './pages/Report';
+import About from './pages/About';
+import Contact from './pages/Contact';
 {/* <Route exact path="/home" render={() => ( */ }
 //   isLoggedIn() ? (
 //     <Redirect to="/front" />
@@ -34,11 +36,14 @@ class App extends Component {
     return (
       <Router history={history}>
         <div>
+        <body background="img/lines.svg" style={{zIndex: '-1'}}>
           <Navbar />
           <Watermark />
           <Route exact path="/" component={Home} />
           <Route exact path="/Resources" component={Resources} />
           <Route exact path="/Report" component={Report} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Profile" render={() => (
             (isLoggedIn()) ? (
               <Dashboard/>
@@ -50,6 +55,7 @@ class App extends Component {
           )} />
           <Route path="/callback" component={Callback} />
           <Subscribe />
+          </body>
         </div>
       </Router>
     );

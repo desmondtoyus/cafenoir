@@ -1,6 +1,39 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-const Report = (props)=>{
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+import API from "../utils/API";
+
+class Report extends React.Component {
+  state = {
+    reportSaved: []
+}
+//do on page load
+componentDidMount() {
+    this.loadReport();
+  }
+  //load saved report from db
+  loadReport= () => {
+    API.getReport()
+      .then(res =>
+        this.setState({ articleSaved: res.data })
+      )
+      .catch(err => console.log(err));
+  };
+   // Deletes a report from the database with a given id, then reloads reports from the db
+  deleteReport = id => {
+  API.deleteReport(id)
+    .then(res => this.loadReport())
+    .catch(err => console.log(err));
+  };
+      // constructor() {
+      //     super()
+      // }
+      render() {
 
     return(
 
@@ -124,6 +157,7 @@ const Report = (props)=>{
     <br/>
 </div>
     )
+}
 }
 
 export default Report;

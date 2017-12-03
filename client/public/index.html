@@ -30,6 +30,17 @@
     You need to enable JavaScript to run this app.
   </noscript>
   <div id="root"></div>
+
+  <script type="text/javascript">
+    // toggle class scroll 
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $('.navbar-trans').addClass('afterscroll');
+      } else {
+        $('.navbar-trans').removeClass('afterscroll');
+      }
+    });
+  </script>
 </body>
 
 </html>

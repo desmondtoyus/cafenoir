@@ -32,7 +32,10 @@ mongoose.connect(
   }
 );
 var db = mongoose.connection;
-
+// db.connect(function(){
+//   console.log("Connected!")
+// })
+// db = connect("localhost:27017/myDatabase")
 
 app.post('/api/image', function (req, res) {
 console.log("got here");

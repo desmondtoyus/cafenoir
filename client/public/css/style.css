@@ -367,6 +367,25 @@ h1 {
   background-clip: padding-box;
 }
 
+.home-highlights-card {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.025), 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+  background-color: #FFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+
+.home-highlights-card:hover {
+  position: relative;
+  display: block;
+  background: #F3DADA;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  box-shadow: 10px 30px 30px 5px rgba(0, 0, 0, 0.035), 10px 10px 25px 10px rgba(0, 0, 0, 0.05);
+}
+
 span.highlights-card-title {
   color: #2F313D;
   font-size: 20px;
@@ -1316,4 +1335,28 @@ hr {
 .twitter-button:hover {
   color: #FFF;
   background: #0da5d3;
+}
+
+
+/* ABOUT PAGE CSS */
+
+
+span.about-title {
+  color: #2F313D;
+  font-size: 35px;
+  font-weight: 300;
+  font-family: 'Mandali', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.about-subhead {
+  color: #FF6B6B;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Mandali', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

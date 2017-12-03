@@ -5,144 +5,206 @@ import {Link} from 'react-router-dom';
 const  ResourceBox = (props)=>{
 return(
     <div>
-    <div className="col-md-4 " style={{height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2'}}>
-        <div className="resources-card">
+        {/* <!-- ROW TWO --> */}
+        <div className="row">
 
-            <Link to="">
+          {/* <!-- Highlights Card 1 --> */}
+          <div className="col-md-4 " style={{height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2'}}>
+            <div className="resources-card">
+
+            <Link to="/Map">
 
                 <div className="highlights-card-content">
-                    <img src="img/search-icon.svg"  alt = "source" />
+                  <img src="img/search-icon.svg"   alt = "source" />
                 </div>
             </Link>
 
-                <span className="highlights-card-title">All Categories</span>
-                <div className="line"></div>
+              <span className="highlights-card-title">Addiction Recovery</span>
+              <div className="line"></div>
 
-                <p className="highlights-copy">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
               </p>
             </div>
+          </div>
+
+
+          {/* <!-- Highlights Card 2 --> */}
+          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
+            <div className="resources-card">
+
+            <Link to ="/Map">
+
+                <div className="highlights-card-content">
+                  <img src="img/search-icon.svg"   alt = "source" />
+                </div>
+            </Link>
+
+              <span className="highlights-card-title">Domestic Violence</span>
+              <div className="line"></div>
+
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              </p>
+            </div>
+          </div>
+
+          {/* <!-- Highlights Card 3 --> */}
+          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
+            <div className="resources-card">
+
+            <Link to ="/Map">
+            
+                <div className="highlights-card-content">
+                    <img src="img/search-icon.svg"   alt = "source" />
+                </div>
+            </Link>
+
+              <span className="highlights-card-title">Food Resources</span>
+              <div className="line"></div>
+
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              </p>
+            </div>
+          </div>
+
 
         </div>
-    <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
-        <div class="resources-card">
 
-            <Link to =" ">
+        {/* <!-- ROW THREE --> */}
+        <div className="row">
 
-                <div class="highlights-card-content">
-                    <img src="img/search-icon.svg"  alt = "source" />
+          {/* <!-- Highlights Card 1 --> */}
+          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
+            <div className="resources-card">
+
+            <Link to ="/Map">
+            
+                <div className="highlights-card-content">
+                    <img src="img/search-icon.svg"   alt = "source" />
                 </div>
-             </Link>
+            </Link>
 
-                <span class="highlights-card-title">Addiction Recovery</span>
-                <div class="line"></div>
+              <span className="highlights-card-title">Medical Care</span>
+              <div className="line"></div>
 
-                <p class="highlights-copy">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
               </p>
             </div>
+          </div>
+
+
+          {/* <!-- Highlights Card 2 --> */}
+          <div className="col-md-4 " style={{height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2'}}>
+            <div className="resources-card">
+
+            <Link to ="/Map">
+            
+                <div className="highlights-card-content">
+                    <img src="img/search-icon.svg"   alt = "source" />
+                </div>
+            </Link>
+
+              <span className="highlights-card-title">Ministries & Churches</span>
+              <div className="line"></div>
+
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              </p>
+            </div>
+          </div>
+
+          {/* <!-- Highlights Card 3 --> */}
+          <div className="col-md-4 " style={{height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2'}}>
+            <div className="resources-card">
+
+            <Link to ="/Map">
+            
+                <div className="highlights-card-content">
+                    <img src="img/search-icon.svg"   alt = "source" />
+                </div>
+            </Link>
+
+              <span className="highlights-card-title">Resources</span>
+              <div className="line"></div>
+
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              </p>
+            </div>
+          </div>
         </div>
-        {/* <!-- Highlights Card 2 --> */}
-          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
-            <div class="resources-card">
 
-                <Link to =" ">
 
-                    <div class="highlights-card-content">
-                        <img src="img/search-icon.svg"  alt = "source" />
+        {/* <!-- ROW FOUR --> */}
+        <div className="row">
+
+          {/* <!-- Highlights Card 1 --> */}
+          <div className="col-md-4 " style={{height: '100%', paddingleft: '25px', position: 'relative', zindex: '2'}}>
+            <div className="resources-card">
+
+            <Link to ="/Map">
+            
+                <div className="highlights-card-content">
+                    <img src="img/search-icon.svg"   alt = "source" />
                 </div>
-             </Link>
+            </Link>
 
-                    <span class="highlights-card-title">Domestic Violence</span>
-                    <div class="line"></div>
+              <span className="highlights-card-title">Shelter</span>
+              <div className="line"></div>
 
-                    <p class="highlights-copy">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
               </p>
             </div>
-            </div>
+          </div>
 
-          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
-                <div class="resources-card">
 
-                    <Link to =" ">
+          {/* <!-- Highlights Card 2 --> */}
+          <div className="col-md-4 " style={{height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2'}}>
+            <div className="resources-card">
 
-                        <div class="highlights-card-content">
-                            <img src="img/search-icon.svg"  alt = "source" />
+            <Link to ="/Map">
+            
+                <div className="highlights-card-content">
+                    <img src="img/search-icon.svg"   alt = "source" />
                 </div>
-             </Link>
+            </Link>
 
-                        <span class="highlights-card-title">Food Resources</span>
-                        <div class="line"></div>
+              <span className="highlights-card-title">Services</span>
+              <div className="line"></div>
 
-                        <p class="highlights-copy">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
               </p>
             </div>
+          </div>
+
+          {/* <!-- Highlights Card 3 --> */}
+          <div className="col-md-4 " style={{height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2'}}>
+            <div className="resources-card-submit">
+
+
+            <Link to ="/Map">
+            
+                <div className="highlights-card-content">
+                    <img src="img/search-icon.svg"   alt = "source" />
                 </div>
+            </Link>
 
-  
-          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
-                    <div class="resources-card">
+              <span className="highlights-card-title">Submit a New Resource</span>
+              <div className="line"></div>
 
-                        <Link to =" ">
-
-                            <div class="highlights-card-content">
-                                <img src="img/search-icon.svg"  alt = "source" />
-                </div>
-             </Link>
-
-                            <span class="highlights-card-title">Medical Care</span>
-                            <div class="line"></div>
-
-                            <p class="highlights-copy">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
               </p>
             </div>
-                    </div>
+          </div>
 
 
-                    {/* <!-- Highlights Card 2 --> */}
-          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
-                        <div class="resources-card">
-
-                            <Link to =" ">
-
-                                <div class="highlights-card-content">
-                                    <img src="img/search-icon.svg"  alt = "source" />
-                </div>
-             </Link>
-
-                                <span class="highlights-card-title">Ministries & Churches</span>
-                                <div class="line"></div>
-
-                                <p class="highlights-copy">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-              </p>
-            </div>
-                        </div>
-
-                        {/* <!-- Highlights Card 3 --> */}
-          <div className="col-md-4 " style={{ height: '100%', 'paddingLeft': '25px', position: 'relative', zIndex: '2' }}>
-                            <div class="resources-card">
-
-                                <Link to =" ">
-
-                                    <div class="highlights-card-content">
-                                        <img src="img/search-icon.svg"  alt = "source" />
-                </div>
-             </Link>
-
-                                    <span class="highlights-card-title">Resources</span>
-                                    <div class="line"></div>
-
-                                    <p class="highlights-copy">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-              </p>
-            </div>
-                           
-                        </div>
-
+        </div>
     </div>
 
 )

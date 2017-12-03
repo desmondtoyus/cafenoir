@@ -1,6 +1,7 @@
 
 import React from 'react';
 import MapCard from '../components/MapCard';
+import {Link} from 'react-router-dom';
 const fetch = require("isomorphic-fetch");
 const { compose, withProps, withHandlers } = require("recompose");
 const {
@@ -105,12 +106,60 @@ class Map extends React.PureComponent {
     }
 }
     render() {
-        return (  <div className="col-md-8 " style={{ height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2' }}>
+        return (  
+        <div>
+          {/* <!-- ROW ONE --> */}
+        <div className="row">
+        {/* <!-- Map Card --> */}
+          <div className="col-md-8" style={{ height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2' }}>
+
+            <Link to="/Map">
+              <div className="resources-card" style={{height: '386px'}}>
+              <MapWithAMarkerClusterer markers={this.state.markers} />
+                {/* <!-- CLICK TO ENLARGE MAP --> */}
+                <div className="row">
+
+                  {/* <!-- Resource --> */}
+                  <div className="col-sm-4 " style={{height: '100%', paddingLeft: '10px', position: 'relative', zIndex: '2', top: '315px', left: '50px', width: '300px'}}>
+                    <div className="resources-card" style={{opacity: '0.8'}}>
+
+                      <p style={{textAlign: 'center', padding: '10px 20px 10px 20px'}}>Click to enlarge map</p>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </Link>
+          </div>
+        {/* <div className="col-md-8 " style={{ height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2' }}>
              
             <MapWithAMarkerClusterer markers={this.state.markers} 
-            />
-           
+            /> */}
+
+          {/* <!-- Highlights Card 3 --> */}
+          <div className="col-md-4 " style={{height: '100%', paddingLeft: '25px', position: 'relative', zIndex: '2'}}>
+            <div className="resources-card">
+
+              <Link to="/Map">
+
+                <div className="highlights-card-content">
+                  <img src="img/search-icon.svg"   alt = "source" />
+                </div>
+              </Link>
+
+              <span className="highlights-card-title">All Categories</span>
+              <div class="line"></div>
+
+              <p className="highlights-copy">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+              </p>
             </div>
+          </div>
+
+        </div>
+        </div>
+
         )
     }
 }
